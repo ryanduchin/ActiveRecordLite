@@ -37,7 +37,7 @@ class SQLObject
   def self.all
     results = DBConnection::execute(<<-SQL)
       SELECT
-        #{table_name}.*  --interpolate like this
+        #{table_name}.*
       FROM
         #{table_name}
     SQL
